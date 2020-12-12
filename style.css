@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(violin.jpg);
+    background-size: cover;
+    background-position: top right;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    color: white;
+    overflow: hidden;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+nav {
+    width: 6rem;
+    height: 100%;
+    background: rgba(85, 85, 85, 0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: chocolate;
+    font-size: 1.5rem;
+    transform: rotateZ(-15deg);
+}
+
+nav li {
+    transform: rotateZ(-45deg);
+    transition: transform 0.5s ease-out;
+}
+
+nav li:hover {
+    transform: scale(1.2);
+}
+
+.burger {
+    width: 5rem;
+    height: 5rem;
+    border: 2px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background: white;
+    display: none;
+}
+
+.burger div {
+    background: white;
+    width: 3rem;
+    height: 0.2rem;
+    border-radius: 0.1rem;
+    margin: 0.2rem 0;
+}
+
+h1 {
+    font-size: 3rem;
+    color: white;
+    width: 40rem;
+    height: 4rem;
+    position: relative;
+    top: calc(50vh - 10rem);
+    text-align: left;
+    left: 2rem;
+}
+
+p {
+    width: 35rem;
+    height: 20rem;
+    text-align: left;
+    position: relative;
+    top: calc(50vh - 9rem);
+    font-size: 2rem;
+    left: 2rem;
+
+}
+
+@media (max-width: 700px) {
+    p {
+        width: 30rem;
+    }
+}
+
+@media (max-width: 590px) {
+    h1 {
+        width: 10rem;
+        top: calc(50vh - 20rem);
+    }
+    p {
+        width: 20rem;
+    }
+}
